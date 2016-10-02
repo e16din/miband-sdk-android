@@ -169,6 +169,10 @@ public class MiBand {
         byte[] protocal = buffer;
         this.io.writeCharacteristic(Profile.UUID_SERVICE_VIBRATION, Profile.UUID_CHAR_VIBRATION, protocal, null);
     }
+    
+    public void customCommand(UUID serviceUUID, UUID characteristicUUID, byte[] buffer) {
+        this.io.writeCharacteristic(serviceUUID, characteristicUUID, buffer, null);
+    }
 
     /**
      * 停止以模式Protocol.VIBRATION_10_TIMES_WITH_LED 开始的震动
