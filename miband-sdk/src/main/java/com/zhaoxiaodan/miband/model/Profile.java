@@ -3,7 +3,6 @@ package com.zhaoxiaodan.miband.model;
 import java.util.UUID;
 
 public class Profile {
-    public static final String BASE_UUID = "0000%s-0000-1000-8000-00805f9b34fb";
     // ========================== 服务部分 ============================
     /**
      * 主要的service
@@ -90,8 +89,7 @@ public class Profile {
     /**
      * 震动
      */
-    //public static final UUID UUID_CHAR_VIBRATION = UUID.fromString("00002a06-0000-1000-8000-00805f9b34fb");
-    public static final UUID UUID_CHAR_VIBRATION = UUID.fromString(String.format(BASE_UUID, "1802"));
+    public static final UUID UUID_CHAR_VIBRATION = UUID.fromString("00002a06-0000-1000-8000-00805f9b34fb");
 
     /**
      * 心率
