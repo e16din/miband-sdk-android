@@ -3,10 +3,8 @@ package com.zhaoxiaodan.miband.model;
 public class Protocol {
     public static final byte[] PAIR = {2};
     public static final byte[] VIBRATION_WITH_LED = {1};
-    //public static final byte[] VIBRATION_10_TIMES_WITH_LED = {2};
     public static final byte[] VIBRATION_10_TIMES_WITH_LED = {0x4};
     public static final byte[] VIBRATION_WITHOUT_LED = {4};
-    //public static final byte[] STOP_VIBRATION = {0};
     /public static final byte[] STOP_VIBRATION = {0x13};
     public static final byte[] ENABLE_REALTIME_STEPS_NOTIFY = {3, 1};
     public static final byte[] DISABLE_REALTIME_STEPS_NOTIFY = {3, 0};
