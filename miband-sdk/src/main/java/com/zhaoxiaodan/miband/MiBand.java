@@ -164,12 +164,21 @@ public class MiBand {
         }
         this.io.writeCharacteristic(Profile.UUID_SERVICE_VIBRATION, Profile.UUID_CHAR_VIBRATION, protocal, null);
     }
+    
+    public void startVibration(byte[] buffer) {
+        byte[] protocal = buffer;
+        this.io.writeCharacteristic(Profile.UUID_SERVICE_VIBRATION, Profile.UUID_CHAR_VIBRATION, protocal, null);
+    }
 
     /**
      * 停止以模式Protocol.VIBRATION_10_TIMES_WITH_LED 开始的震动
      */
     public void stopVibration() {
         this.io.writeCharacteristic(Profile.UUID_SERVICE_VIBRATION, Profile.UUID_CHAR_VIBRATION, Protocol.STOP_VIBRATION, null);
+    }
+    
+    public void stopVibration(byte[] buffer) {
+        this.io.writeCharacteristic(Profile.UUID_SERVICE_VIBRATION, Profile.UUID_CHAR_VIBRATION, buffer, null);
     }
 
     public void setNormalNotifyListener(NotifyListener listener) {
