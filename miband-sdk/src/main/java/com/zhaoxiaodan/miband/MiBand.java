@@ -21,6 +21,7 @@ import com.zhaoxiaodan.miband.model.UserInfo;
 import com.zhaoxiaodan.miband.model.VibrationMode;
 
 import java.util.Arrays;
+import java.util.UUID;
 
 public class MiBand {
 
