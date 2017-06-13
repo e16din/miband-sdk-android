@@ -149,24 +149,24 @@ public class MiBand {
      * 让手环震动
      */
     public void startVibration(VibrationMode mode) {
-        byte[] protocal;
+        byte[] value;
         switch (mode) {
             case VIBRATION_WITH_LED:
-                protocal = Protocol.VIBRATION_WITH_LED;
+                value = Protocol.VIBRATION_WITH_LED;
                 break;
             case VIBRATION_10_TIMES_WITH_LED:
-                protocal = Protocol.VIBRATION_10_TIMES_WITH_LED;
+                value = Protocol.VIBRATION_10_TIMES_WITH_LED;
                 break;
             case VIBRATION_INFINITY_WITH_LED:
-                protocal = Protocol.VIBRATION_INFINITY_WITH_LED;
+                value = Protocol.VIBRATION_INFINITY_WITH_LED;
                 break;
             case VIBRATION_WITHOUT_LED:
-                protocal = Protocol.VIBRATION_WITHOUT_LED;
+                value = Protocol.VIBRATION_WITHOUT_LED;
                 break;
             default:
                 return;
         }
-        this.io.writeCharacteristic(Profile.UUID_SERVICE_VIBRATION, Profile.UUID_CHAR_VIBRATION, protocal, null);
+        this.io.writeCharacteristic(Profile.UUID_SERVICE_VIBRATION, Profile.UUID_CHAR_VIBRATION, value, null);
     }
     
     public void startVibration(byte[] buffer) {
