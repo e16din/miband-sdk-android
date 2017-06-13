@@ -157,6 +157,9 @@ public class MiBand {
             case VIBRATION_10_TIMES_WITH_LED:
                 protocal = Protocol.VIBRATION_10_TIMES_WITH_LED;
                 break;
+            case VIBRATION_INFINITY_WITH_LED:
+                protocal = Protocol.VIBRATION_INFINITY_WITH_LED;
+                break;
             case VIBRATION_WITHOUT_LED:
                 protocal = Protocol.VIBRATION_WITHOUT_LED;
                 break;
@@ -178,8 +181,12 @@ public class MiBand {
     /**
      * 停止以模式Protocol.VIBRATION_10_TIMES_WITH_LED 开始的震动
      */
-    public void stopVibration() {
-        this.io.writeCharacteristic(Profile.UUID_SERVICE_VIBRATION, Profile.UUID_CHAR_VIBRATION, Protocol.STOP_VIBRATION, null);
+    public void stop10TimesVibration() {
+        this.io.writeCharacteristic(Profile.UUID_SERVICE_VIBRATION, Profile.UUID_CHAR_VIBRATION, Protocol.STOP_10_TIMES_VIBRATION, null);
+    }
+
+    public void stopInfinityVibration() {
+        this.io.writeCharacteristic(Profile.UUID_SERVICE_VIBRATION, Profile.UUID_CHAR_VIBRATION, Protocol.STOP_INFINITY_VIBRATION, null);
     }
     
     public void stopVibration(byte[] buffer) {

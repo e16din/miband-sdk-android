@@ -41,8 +41,10 @@ public class MainActivity extends Activity {
             "startHeartRateScan",
             "miband.startVibration(VibrationMode.VIBRATION_WITH_LED);",
             "miband.startVibration(VibrationMode.VIBRATION_WITHOUT_LED);",
+            "miband.startVibration(VibrationMode.VIBRATION_INFINITY_WITH_LED;",
             "miband.startVibration(VibrationMode.VIBRATION_10_TIMES_WITH_LED);",
-            "stopVibration",
+            "stop10TimesVibration",
+            "stopInfinityVibration",
             "setNormalNotifyListener",
             "setRealtimeStepsNotifyListener",
             "enableRealtimeStepsNotify",
@@ -162,10 +164,14 @@ public class MainActivity extends Activity {
                 } else if (position == menuIndex++) {
                     miband.startVibration(VibrationMode.VIBRATION_WITHOUT_LED);
                 } else if (position == menuIndex++) {
+                    miband.startVibration(VibrationMode.VIBRATION_INFINITY_WITH_LED);
+                } else if (position == menuIndex++) {
                     miband.startVibration(VibrationMode.VIBRATION_10_TIMES_WITH_LED);
                 } else if (position == menuIndex++) {
-                    miband.stopVibration();
+                    miband.stop10TimesVibration();
                 } else if (position == menuIndex++) {
+                    miband.stopInfinityVibration();
+                }else if (position == menuIndex++) {
                     miband.setNormalNotifyListener(new NotifyListener() {
 
                         @Override
