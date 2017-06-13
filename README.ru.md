@@ -1,13 +1,10 @@
-[Описание на русском языке](README.ru.md)
+# Поддержка проекта прекращена ([pangliang](https://github.com/pangliang))
 
-# 停止维护
+Мне очень жаль! Официальное приложение постоянно меняется, самому мне больше не требуется SDK, поэтому я решил прекратить поддержку. Если вы хотите поддерживать SDK, то пара ссылок в помощь:
 
-非常抱歉! 因为官方app的'协议'不停的变动, 我自己本身又没有使用这个sdk的需求, 加上最近也比较忙, 所以不打算维护了. 
-如果你还是想继续捣鼓sdk, 可以参考我的一篇笔记 和 一个反编译的工程 对新版app的协议进行研究.
+[Протоколы браслета](http://www.zhaoxiaodan.com/android/%E5%B0%8F%E7%B1%B3%E6%89%8B%E7%8E%AF%E8%93%9D%E7%89%99%E5%8D%8F%E8%AE%AE%E7%A0%94%E7%A9%B6.html)
 
-[小米手环协议研究](http://www.zhaoxiaodan.com/android/%E5%B0%8F%E7%B1%B3%E6%89%8B%E7%8E%AF%E8%93%9D%E7%89%99%E5%8D%8F%E8%AE%AE%E7%A0%94%E7%A9%B6.html)
-
-[小米app反编译工程](https://github.com/pangliang/xiaomi-health-app-decompile)
+[Декомпилированный xiaomi-health-app](https://github.com/pangliang/xiaomi-health-app-decompile)
 
 
 ## 当前测试通过固件版本
